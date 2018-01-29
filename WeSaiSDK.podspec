@@ -16,5 +16,6 @@ Pod::Spec.new do |s|
   s.dependency 'ShareSDK3/ShareSDKPlatforms/WeChat', '~> 3.3.2'
   s.dependency 'Masonry', '~> 0.6.1'
   s.dependency 'JSONModel', '~> 1.2.0'
+  s.dependency 'FMDB'
   s.ios.resource=['ios/Resource/**/*.{xcassets,wav,mp3,xib,txt,cer,plist}']
 end
