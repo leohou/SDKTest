@@ -17,5 +17,6 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry', '~> 0.6.1'
   s.dependency 'JSONModel', '~> 1.2.0'
   s.dependency 'FMDB'
+  s.dependency 'IQKeyboardManager' ,'5.0.6'
   s.ios.resource=['ios/Resource/**/*.{xcassets,wav,mp3,xib,txt,cer,plist}']
 end
