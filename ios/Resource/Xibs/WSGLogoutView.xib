@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CfW-PT-ppl" customClass="WSGLogoutView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgo-N7-ISA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yby-d8-Tny">
+                            <rect key="frame" x="0.0" y="10" width="375" height="583"/>
+                            <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IS-Ao-XXF">
+                            <rect key="frame" x="0.0" y="593" width="375" height="64"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ult-KF-D84">
+                                    <rect key="frame" x="156.5" y="17" width="62" height="30"/>
+                                    <state key="normal" title="退出登录"/>
+                                    <connections>
+                                        <action selector="wsLogouAction:" destination="CfW-PT-ppl" eventType="touchUpInside" id="gCX-ue-OTt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="0E3-HB-iqJ"/>
+                                <constraint firstItem="Ult-KF-D84" firstAttribute="centerX" secondItem="5IS-Ao-XXF" secondAttribute="centerX" id="Gya-ef-Ind"/>
+                                <constraint firstItem="Ult-KF-D84" firstAttribute="centerY" secondItem="5IS-Ao-XXF" secondAttribute="centerY" id="dDs-Rz-DtL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5IS-Ao-XXF" firstAttribute="leading" secondItem="hgo-N7-ISA" secondAttribute="leading" id="1CZ-10-zb5"/>
+                        <constraint firstAttribute="trailing" secondItem="5IS-Ao-XXF" secondAttribute="trailing" id="BMh-MQ-ugJ"/>
+                        <constraint firstAttribute="trailing" secondItem="yby-d8-Tny" secondAttribute="trailing" id="PA3-S7-eWk"/>
+                        <constraint firstAttribute="bottom" secondItem="5IS-Ao-XXF" secondAttribute="bottom" constant="10" id="WJm-u5-nO4"/>
+                        <constraint firstItem="yby-d8-Tny" firstAttribute="leading" secondItem="hgo-N7-ISA" secondAttribute="leading" id="i7g-Hx-KS1"/>
+                        <constraint firstItem="yby-d8-Tny" firstAttribute="top" secondItem="hgo-N7-ISA" secondAttribute="top" constant="10" id="jqQ-JW-rhH"/>
+                        <constraint firstItem="5IS-Ao-XXF" firstAttribute="top" secondItem="yby-d8-Tny" secondAttribute="bottom" id="uZY-Pt-y4S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RaQ-Pc-Lhn" firstAttribute="bottom" secondItem="hgo-N7-ISA" secondAttribute="bottom" id="8BJ-oj-0dh"/>
+                <constraint firstItem="hgo-N7-ISA" firstAttribute="top" secondItem="CfW-PT-ppl" secondAttribute="top" id="ObM-4L-pLM"/>
+                <constraint firstItem="hgo-N7-ISA" firstAttribute="leading" secondItem="RaQ-Pc-Lhn" secondAttribute="leading" id="Rr2-rM-C8t"/>
+                <constraint firstItem="RaQ-Pc-Lhn" firstAttribute="trailing" secondItem="hgo-N7-ISA" secondAttribute="trailing" id="vrs-PI-cTH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="RaQ-Pc-Lhn"/>
+            <connections>
+                <outlet property="adView" destination="yby-d8-Tny" id="Z8M-sh-txB"/>
+                <outlet property="clickLogoutButton" destination="Ult-KF-D84" id="Avq-UZ-C1f"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="377"/>
+        </view>
+    </objects>
+</document>

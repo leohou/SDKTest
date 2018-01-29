@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="A6K-Be-iKj" customClass="WSGOrderPayView">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWG-PS-hQA">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mme-IC-lCL">
+                            <rect key="frame" x="0.0" y="262.5" width="667" height="112.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWZ-1k-lMR">
+                                    <rect key="frame" x="249" y="58.5" width="37" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="支付">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wsClickPayAction:" destination="A6K-Be-iKj" eventType="touchUpInside" id="ltJ-ms-XxZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IF1-jH-hhH">
+                                    <rect key="frame" x="381.5" y="58.5" width="37" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="IF1-jH-hhH" secondAttribute="bottom" constant="20" id="4uT-Uj-bVV"/>
+                                <constraint firstItem="IF1-jH-hhH" firstAttribute="width" secondItem="DWZ-1k-lMR" secondAttribute="width" id="MoF-N6-6cm"/>
+                                <constraint firstAttribute="bottom" secondItem="DWZ-1k-lMR" secondAttribute="bottom" constant="20" id="eIZ-nN-rGb"/>
+                                <constraint firstItem="IF1-jH-hhH" firstAttribute="height" secondItem="DWZ-1k-lMR" secondAttribute="height" id="ehj-iI-tKH"/>
+                                <constraint firstItem="IF1-jH-hhH" firstAttribute="centerX" secondItem="mme-IC-lCL" secondAttribute="centerX" multiplier="1.2" id="ghj-mm-Zz7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mme-IC-lCL" firstAttribute="height" secondItem="HWG-PS-hQA" secondAttribute="height" multiplier="0.3" id="1Po-tA-59D"/>
+                        <constraint firstAttribute="trailing" secondItem="mme-IC-lCL" secondAttribute="trailing" id="3Yl-uw-dHE"/>
+                        <constraint firstAttribute="bottom" secondItem="mme-IC-lCL" secondAttribute="bottom" id="Aq1-MT-eb8"/>
+                        <constraint firstItem="DWZ-1k-lMR" firstAttribute="centerX" secondItem="HWG-PS-hQA" secondAttribute="centerX" multiplier="0.8" id="jEy-8H-iug"/>
+                        <constraint firstItem="mme-IC-lCL" firstAttribute="leading" secondItem="HWG-PS-hQA" secondAttribute="leading" id="qM6-tN-7iC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HWG-PS-hQA" firstAttribute="bottom" secondItem="8Kk-6g-gKV" secondAttribute="bottom" id="KYw-Ru-cJf"/>
+                <constraint firstItem="HWG-PS-hQA" firstAttribute="leading" secondItem="8Kk-6g-gKV" secondAttribute="leading" id="WC1-M9-csM"/>
+                <constraint firstItem="HWG-PS-hQA" firstAttribute="top" secondItem="8Kk-6g-gKV" secondAttribute="top" id="dHo-j9-AkV"/>
+                <constraint firstItem="8Kk-6g-gKV" firstAttribute="trailing" secondItem="HWG-PS-hQA" secondAttribute="trailing" id="sYm-zw-vK5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8Kk-6g-gKV"/>
+            <point key="canvasLocation" x="-62" y="182"/>
+        </view>
+    </objects>
+</document>
